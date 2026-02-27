@@ -3,34 +3,63 @@
 <head>
   <title>AERVOQ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      background-color: #000;
+      background: #000;
       color: #fff;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Montserrat', sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       text-align: center;
+      letter-spacing: 1px;
     }
+
+    .container {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
     h1 {
-      font-size: 48px;
-      letter-spacing: 4px;
-      margin-bottom: 10px;
+      font-size: 64px;
+      font-weight: 600;
+      letter-spacing: 8px;
+      margin: 0;
     }
+
+    .line {
+      width: 60px;
+      height: 2px;
+      background: white;
+      margin: 25px auto;
+      opacity: 0.7;
+    }
+
     p {
       font-size: 16px;
+      font-weight: 300;
       opacity: 0.7;
+      margin: 10px 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
+
 <body>
-  <div>
+  <div class="container">
     <h1>AERVOQ</h1>
-    <p>Elevating Everyday Essentials.</p>
-    <p>Launching Soon.</p>
+    <div class="line"></div>
+    <p>Elevating Everyday Essentials</p>
+    <p>Launching Soon</p>
   </div>
 </body>
 </html>
