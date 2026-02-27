@@ -1,347 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AERVOQ | Defining Culture</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AERVOQ | Cultural Identity Label</title>
 
-    <style>
-        :root {
-            --bg: #080808;
-            --accent: #ffffff;
-            --gray: #a0a0a0;
-            --border: rgba(255, 255, 255, 0.1);
-            --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            cursor: crosshair; /* Premium agency feel */
-        }
+<style>
 
-        html {
-            scroll-behavior: smooth;
-        }
+:root {
+    --bg: #0a0a0a;
+    --accent: #ffffff;
+    --gray: #8a8a8a;
+    --border: rgba(255,255,255,0.08);
+    --transition: all 0.5s cubic-bezier(0.16,1,0.3,1);
+}
 
-        body {
-            background: var(--bg);
-            color: var(--accent);
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        /* --- NAVIGATION --- */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 5%;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            background: rgba(8, 8, 8, 0.7);
-            backdrop-filter: blur(15px);
-            border-bottom: 1px solid var(--border);
-        }
+html {
+    scroll-behavior: smooth;
+}
 
-        .logo {
-            font-family: 'Space Grotesk', sans-serif;
-            font-weight: 700;
-            letter-spacing: 6px;
-            font-size: 22px;
-            text-transform: uppercase;
-        }
+body {
+    background: var(--bg);
+    color: var(--accent);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
 
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 40px;
-        }
+/* NAVIGATION */
 
-        nav ul li a {
-            text-decoration: none;
-            color: var(--accent);
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 2px;
-            opacity: 0.6;
-            transition: var(--transition);
-            text-transform: uppercase;
-        }
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 25px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    background: rgba(10,10,10,0.6);
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+}
 
-        nav ul li a:hover {
-            opacity: 1;
-            letter-spacing: 3px;
-        }
+.logo {
+    font-weight: 500;
+    letter-spacing: 8px;
+    font-size: 20px;
+}
 
-        /* --- HERO SECTION --- */
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            position: relative;
-            background: 
-                linear-gradient(to bottom, rgba(8,8,8,0.2), var(--bg)),
-                url("https://images.unsplash.com/photo-1520975922071-c7a6b1c3b9e0?auto=format&fit=crop&q=80") center/cover no-repeat;
-        }
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
 
-        .hero h1 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: clamp(50px, 15vw, 150px);
-            font-weight: 700;
-            line-height: 0.9;
-            margin-bottom: 20px;
-            animation: fadeIn 1.5s ease-out;
-        }
+nav ul li a {
+    text-decoration: none;
+    color: var(--accent);
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    transition: var(--transition);
+}
 
-        .hero p {
-            font-size: 12px;
-            letter-spacing: 5px;
-            color: var(--gray);
-            text-transform: uppercase;
-            animation: fadeIn 2s ease-out;
-        }
+nav ul li a:hover {
+    opacity: 1;
+}
 
-        .cta-btn {
-            margin-top: 50px;
-            padding: 18px 45px;
-            background: transparent;
-            border: 1px solid var(--accent);
-            color: var(--accent);
-            text-transform: uppercase;
-            font-size: 11px;
-            letter-spacing: 4px;
-            font-weight: 600;
-            transition: var(--transition);
-            position: relative;
-            overflow: hidden;
-        }
+/* HERO */
 
-        .cta-btn:hover {
-            background: var(--accent);
-            color: var(--bg);
-        }
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:
+    linear-gradient(to bottom, rgba(0,0,0,0.3), var(--bg)),
+    url("https://images.unsplash.com/photo-1520975922071-c7a6b1c3b9e0?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat;
+    position: relative;
+}
 
-        /* --- PRODUCT GRID --- */
-        section {
-            padding: 140px 10%;
-        }
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("https://grainy-gradients.vercel.app/noise.svg");
+    opacity: 0.05;
+    pointer-events: none;
+}
 
-        .section-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            margin-bottom: 60px;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 20px;
-        }
+.hero p {
+    font-size: 11px;
+    letter-spacing: 6px;
+    color: var(--gray);
+    text-transform: uppercase;
+}
 
-        .section-title {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 32px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
+.hero h1 {
+    font-size: clamp(60px, 14vw, 160px);
+    font-weight: 500;
+    letter-spacing: -4px;
+    margin-top: 20px;
+}
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
+.cta-btn {
+    margin-top: 60px;
+    padding: 18px 50px;
+    border: 1px solid var(--accent);
+    text-decoration: none;
+    color: var(--accent);
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
 
-        .product-card {
-            position: relative;
-            overflow: hidden;
-            background: #111;
-        }
+.cta-btn:hover {
+    background: var(--accent);
+    color: var(--bg);
+}
 
-        .img-container {
-            overflow: hidden;
-            aspect-ratio: 4/5;
-        }
+/* SECTION */
 
-        .product-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
-            filter: grayscale(20%);
-        }
+section {
+    padding: 150px 8%;
+}
 
-        .product-card:hover img {
-            transform: scale(1.05);
-            filter: grayscale(0%);
-        }
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 70px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+}
 
-        .product-info {
-            padding: 20px 0;
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px solid transparent;
-            transition: var(--transition);
-        }
+.section-title {
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
 
-        .product-card:hover .product-info {
-            border-bottom-color: var(--border);
-        }
+/* GRID */
 
-        .product-name {
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
 
-        .product-price {
-            font-size: 13px;
-            color: var(--gray);
-        }
+.product-card {
+    position: relative;
+    overflow: hidden;
+    background: #111;
+}
 
-        /* --- STATEMENT --- */
-        .statement-box {
-            background: #0d0d0d;
-            padding: 100px 20px;
-            text-align: center;
-        }
+.img-container {
+    aspect-ratio: 4/5;
+    overflow: hidden;
+}
 
-        .statement-text {
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: clamp(24px, 4vw, 42px);
-            font-family: 'Space Grotesk', sans-serif;
-            line-height: 1.2;
-            font-weight: 300;
-        }
+.product-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.2s cubic-bezier(0.16,1,0.3,1);
+    filter: grayscale(15%);
+}
 
-        /* --- CONTACT --- */
-        .footer-main {
-            padding: 100px 10% 50px;
-            background: #050505;
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 50px;
-        }
+.product-card:hover img {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
 
-        .footer-brand h2 { font-family: 'Space Grotesk'; letter-spacing: 5px; margin-bottom: 20px; }
-        .footer-links h4 { font-size: 12px; margin-bottom: 20px; color: var(--gray); letter-spacing: 2px; }
-        .footer-links p { font-size: 14px; margin-bottom: 10px; cursor: pointer; transition: 0.3s; }
-        .footer-links p:hover { color: var(--gray); }
+.product-card::after {
+    content: "View Piece";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: 4px;
+    opacity: 0;
+    transition: var(--transition);
+}
 
-        footer {
-            padding: 40px 10%;
-            font-size: 10px;
-            letter-spacing: 2px;
-            color: #444;
-            border-top: 1px solid var(--border);
-            display: flex;
-            justify-content: space-between;
-        }
+.product-card:hover::after {
+    opacity: 1;
+}
 
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+.product-info {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+}
 
-        @media (max-width: 768px) {
-            .footer-main { grid-template-columns: 1fr; }
-            nav ul { display: none; }
-        }
-    </style>
+.product-name {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.product-price {
+    color: var(--gray);
+}
+
+/* STATEMENT */
+
+.statement-box {
+    background: #0f0f0f;
+    padding: 140px 20px;
+    text-align: center;
+}
+
+.statement-text {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: clamp(28px,4vw,48px);
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* FOOTER */
+
+.footer-main {
+    padding: 120px 8% 60px;
+    background: #050505;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+}
+
+.footer-links h4 {
+    font-size: 11px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: var(--gray);
+}
+
+.footer-links p {
+    font-size: 14px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 40px 8%;
+    font-size: 10px;
+    letter-spacing: 2px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    color: #444;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+    nav ul{display:none;}
+    .footer-main{grid-template-columns:1fr;}
+}
+
+</style>
 </head>
 <body>
 
-    <nav>
-        <div class="logo">AERVOQ</div>
-        <ul>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Manifesto</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+<nav>
+<div class="logo">AERVOQ</div>
+<ul>
+<li><a href="#shop">Shop</a></li>
+<li><a href="#">Manifesto</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
 
-    <div class="hero">
-        <p>Drop 01 / Essentials</p>
-        <h1>AERVOQ</h1>
-        <button class="cta-btn">Explore Collection</button>
-    </div>
+<div class="hero">
+<p>Drop 01 — Limited Release</p>
+<h1>AERVOQ</h1>
+<a href="#shop" class="cta-btn">Explore Collection</a>
+</div>
 
-    <section id="shop">
-        <div class="section-header">
-            <h2 class="section-title">Catalogue</h2>
-            <p style="font-size: 11px; color: var(--gray);">VIEW ALL (08)</p>
-        </div>
+<section id="shop">
+<div class="section-header">
+<h2 class="section-title">Catalogue</h2>
+<p style="font-size:11px;color:var(--gray);">Limited Pieces Only</p>
+</div>
 
-        <div class="grid">
-            <div class="product-card">
-                <div class="img-container">
-                    <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3" alt="Oversized T-shirt">
-                </div>
-                <div class="product-info">
-                    <span class="product-name">Oversized Core Black</span>
-                    <span class="product-price">₹2,499</span>
-                </div>
-            </div>
+<div class="grid">
 
-            <div class="product-card">
-                <div class="img-container">
-                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="Beige Hoodie">
-                </div>
-                <div class="product-info">
-                    <span class="product-name">Relaxed Neutral Beige</span>
-                    <span class="product-price">₹3,999</span>
-                </div>
-            </div>
+<div class="product-card">
+<div class="img-container">
+<img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=800&q=80">
+</div>
+<div class="product-info">
+<span class="product-name">Oversized Core Black — 120 Units</span>
+<span class="product-price">₹2,499</span>
+</div>
+</div>
 
-            <div class="product-card">
-                <div class="img-container">
-                    <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990" alt="Street Fit">
-                </div>
-                <div class="product-info">
-                    <span class="product-name">Heavyweight Street Fit</span>
-                    <span class="product-price">₹2,899</span>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="product-card">
+<div class="img-container">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80">
+</div>
+<div class="product-info">
+<span class="product-name">Relaxed Neutral Beige — 90 Units</span>
+<span class="product-price">₹3,999</span>
+</div>
+</div>
 
-    <div class="statement-box">
-        <div class="statement-text">
-            "WE DON'T DESIGN CLOTHES. WE DESIGN **STATEMENTS** FOR THE SILENTLY POWERFUL."
-        </div>
-    </div>
+<div class="product-card">
+<div class="img-container">
+<img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=800&q=80">
+</div>
+<div class="product-info">
+<span class="product-name">Heavyweight Street Fit — 75 Units</span>
+<span class="product-price">₹2,899</span>
+</div>
+</div>
 
-    <div class="footer-main">
-        <div class="footer-brand">
-            <h2>AERVOQ</h2>
-            <p style="color: var(--gray); font-size: 14px; max-width: 300px;">Crafting the future of street aesthetics through minimal design and premium quality.</p>
-        </div>
-        <div class="footer-links">
-            <h4>SOCIAL</h4>
-            <p>Instagram</p>
-            <p>Twitter / X</p>
-            <p>YouTube</p>
-        </div>
-        <div class="footer-links">
-            <h4>CONTACT</h4>
-            <p>hello@aervoq.com</p>
-            <p>New Delhi, IN</p>
-        </div>
-    </div>
+</div>
+</section>
 
-    <footer>
-        <div>© 2026 AERVOQ STUDIO.</div>
-        <div>DESIGNED TO LAST.</div>
-    </footer>
+<div class="statement-box">
+<div class="statement-text">
+We do not design clothes.  
+We construct cultural presence for the quietly powerful.
+</div>
+</div>
+
+<div class="footer-main">
+<div>
+<h2 style="letter-spacing:6px;margin-bottom:20px;">AERVOQ</h2>
+<p style="color:var(--gray);max-width:300px;">A cultural identity label built on restraint, depth, and permanence.</p>
+</div>
+
+<div class="footer-links">
+<h4>SOCIAL</h4>
+<p>Instagram</p>
+<p>Twitter / X</p>
+<p>YouTube</p>
+</div>
+
+<div class="footer-links">
+<h4>CONTACT</h4>
+<p>hello@aervoq.com</p>
+<p>New Delhi, IN</p>
+</div>
+</div>
+
+<footer>
+<div>© 2026 AERVOQ STUDIO</div>
+<div>DESIGNED TO LAST</div>
+</footer>
 
 </body>
 </html>
